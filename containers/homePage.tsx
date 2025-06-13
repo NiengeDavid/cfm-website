@@ -1,8 +1,17 @@
+import HeroCard from "@/components/heroCard";
+import LatestSermon from "@/components/latestSermon";
+import LiveStream from "@/components/livestream";
+import { homeDetails } from "@/data/homeDetails";
+import { livestreamItems } from "@/data/livestream";
+
 export default function HomePage() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <h1 className="text-4xl font-bold">Welcome to the Home Page</h1>
-      <p className="mt-4 text-lg">This is a simple home page example.</p>
+    <div className="w-full">
+      <HeroCard bgImage={homeDetails?.bgImage} title={homeDetails?.title} />
+      <div className="w-full">
+        <LatestSermon data={homeDetails?.latestSermon} />
+      </div>
+      <LiveStream items={livestreamItems} />
     </div>
   );
 }
