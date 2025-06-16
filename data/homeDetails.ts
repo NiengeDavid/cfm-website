@@ -19,22 +19,71 @@ export const homeDetails = {
   },
   livestreamItems: [
     {
-      name: "CFM LIVE",
+      name: "cfm-live",
       label: "Click to play",
-      logoUrl: "/cfm-live.png", // Replace with your actual path or use an icon component
+      logo: "/assets/mixlr.svg",
       color: "red",
+      link: "https://cfm-live.mixlr.com",
     },
     {
-      name: "Facebook Live",
+      name: " Christ family ministry",
       label: "Click to play",
-      logoUrl: "/fb-live.png",
+      logo: "/assets/fblive.svg",
       color: "blue",
+      link: "https://www.facebook.com/christfamilyministry",
     },
     {
-      name: "YouTube",
+      name: "Christ family ministry",
       label: "Click to play",
-      logoUrl: "/yt-live.png",
+      logo: "/assets/yt.svg",
       color: "red",
+      link: "https://www.youtube.com/@ChristFamilyMinistry",
     },
+  ],
+  seniorPastors: {
+    title: "Our Senior Pastors",
+    description:
+      "Our Church is led by Pastors Arome and Avese Tokula supported by a team of pastors and ministers who are committed to Christ Family Ministry’s God-given mandate to fill the earth with the beautiful message of our Lord Jesus",
+    btnText: "Arome and Avese",
+    image: "/assets/Pstaromeandpstavese.png",
+  },
+  relevantChurch: {
+    title: "The Relevant Church",
+    details: "Pastor Arome’s vision for the future",
+    video: {
+      url: "https://www.youtube.com/embed/u6ZNZwBliiI?si=g_ZeDxSnvtH9mrcB",
+      autoplay: true,
+    },
+  },
+  resources: [
+    {
+      title: "Pastor Arome's Messages",
+      image: "/assets/telegram.png",
+      link: "https://t.me/pastorarome",
+    },
+    {
+      title: "Euphorial Devotionals",
+      image: "/assets/devotional.png",
+      link: "https://theeuphoria.vercel.app/",
+    },
+    {
+      title: "Daily Confessions",
+      image: "/assets/confession.png",
+      link: "https://theeuphoria.vercel.app/declarations",
+    },
+  ],
+  events: [
+    {
+      title: "Beyond Now",
+      image: "/assets/events/beyond.png",
+      link: "https://registerbethel.com",
+    },
+    {
+      title: "Life Conversations",
+      image: "/assets/events/life.png",
+      link: "",
+    },
+    { title: "Bethel", image: "/assets/events/bethel.png" },
+    { title: "Waiting", image: "/assets/events/waiting.png" },
   ],
 };

@@ -1,8 +1,13 @@
+import GenCarousel from "@/components/carousel";
+import EventsCarousel from "@/components/eventsCarousel";
 import HeroCard from "@/components/heroCard";
 import LatestSermon from "@/components/latestSermon";
 import LiveStream from "@/components/livestream";
+import Partnership from "@/components/partnership";
+import RelevantChurch from "@/components/relevantChurch";
+import ResourcesSection from "@/components/resourceSection";
+import SeniorPastors from "@/components/seniorPastors";
 import { homeDetails } from "@/data/homeDetails";
-import { livestreamItems } from "@/data/livestream";
 
 export default function HomePage() {
   return (
@@ -11,7 +16,12 @@ export default function HomePage() {
       <div className="w-full">
         <LatestSermon data={homeDetails?.latestSermon} />
       </div>
-      <LiveStream items={livestreamItems} />
+      <LiveStream items={homeDetails?.livestreamItems} />
+      <SeniorPastors seniorPastors={homeDetails?.seniorPastors} />
+      <RelevantChurch data={homeDetails?.relevantChurch} />
+      <ResourcesSection resources={homeDetails?.resources} />
+      <EventsCarousel events={homeDetails?.events} />
+      <Partnership />
     </div>
   );
 }

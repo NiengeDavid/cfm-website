@@ -33,7 +33,7 @@ const logo = "/assets/logowhite.svg";
 
 export default function Footer() {
   return (
-    <footer className="bg-secondary text-bg text-sm">
+    <footer className="bg-secondary text-bg text-sm z-30">
       <Container>
         <div className="py-10">
           {/* Top Section */}
@@ -67,14 +67,16 @@ export default function Footer() {
               </p>
               <div className="flex justify-center gap-4">
                 {socialIcons.map(({ name, icon, href }) => (
-                  <Link
+                  <a
                     href={href}
                     key={name}
                     aria-label={name}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="hover:text-primary-accent transition-colors"
                   >
                     {getIcon(icon)}
-                  </Link>
+                  </a>
                 ))}
               </div>
             </div>

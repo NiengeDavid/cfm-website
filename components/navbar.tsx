@@ -21,7 +21,7 @@ export default function Navbar() {
       <Link
         key={text}
         href={href}
-        className={`w-fit mx-auto text-black text-base sm:text-lg px-2 py-1 hover:text-bg ${
+        className={`w-fit mx-auto text-black text-base sm:text-lg px-2 py-1 hover:text-white ${
           isActive ? "border-b-2 border-accent1" : ""
         }`}
       >
@@ -31,7 +31,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="top-0 left-0 w-full bg-bg z-50 shadow-md">
+    <nav className="top-0 left-0 w-full bg-white z-50 shadow-md">
       <Container>
         <div className="flex items-center justify-between py-4">
           {/* Logo */}
@@ -80,7 +80,7 @@ export default function Navbar() {
                       onClick={() => setIsOpen(false)}
                       aria-label="Close Menu"
                     >
-                      <X size={24} className="text-black hover:text-bg" />
+                      <X size={24} className="text-black hover:text-white" />
                     </button>
                   </div>
 

@@ -19,9 +19,9 @@ const rev = "/assets/pastoraromeweb.png";
 
 export default function LiveStream({ items }: LiveStreamProps) {
   return (
-    <div className="bg-bg w-full">
+    <div className="bg-white w-full">
       <Container className="w-full py-6 md:pt-12">
-        <h3 className="text-bg text-center text-[60px] md:text-[120px] font-bold mb-12 md:mb-7 drop-shadow-lg">
+        <h3 className="text-white text-center text-[60px] md:text-[120px] font-bold mb-12 md:mb-7 drop-shadow-lg">
           LiveStream
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-screen-xl mx-auto px-4">
