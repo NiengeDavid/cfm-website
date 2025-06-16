@@ -3,7 +3,7 @@ import Container from "./container";
 
 export default function Partnership() {
   return (
-    <section className="bg-white my-24">
+    <section className="bg-white mt-24">
       <div className="relative bg-gradient-to-r from-primary-accent to-primary overflow-hidden min-h-[400px] flex items-center">
         {/* Background Curved Elements */}
         <div className="hidden lg:block absolute inset-0">

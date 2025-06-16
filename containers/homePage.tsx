@@ -7,6 +7,7 @@ import Partnership from "@/components/partnership";
 import RelevantChurch from "@/components/relevantChurch";
 import ResourcesSection from "@/components/resourceSection";
 import SeniorPastors from "@/components/seniorPastors";
+import Testimonials from "@/components/testimonies";
 import { homeDetails } from "@/data/homeDetails";
 
 export default function HomePage() {
@@ -22,6 +23,7 @@ export default function HomePage() {
       <ResourcesSection resources={homeDetails?.resources} />
       <EventsCarousel events={homeDetails?.events} />
       <Partnership />
+      <Testimonials />
     </div>
   );
 }
