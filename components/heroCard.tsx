@@ -19,7 +19,7 @@ export default function HeroCard({ bgImage, title }: HeroCardProps) {
       <Container className="relative z-10">
         <div className="w-full mx-auto py-10 md:py-36">
           <div className="max-w-screen-sm mx-auto p-4">
-            <h1 className="text-5xl font-serif font-normal leading-20 text-bg text-center max-w-sm mx-auto md:leading-28 md:max-w-xl md:text-7xl lg:text-8xl">
+            <h1 className="text-5xl font-serif font-normal leading-16 text-bg text-center max-w-sm mx-auto md:leading-28 md:max-w-xl md:text-7xl lg:text-8xl">
               {title}
             </h1>
             <ArrowDownToDot
