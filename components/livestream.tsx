@@ -24,12 +24,12 @@ export default function LiveStream({ items }: LiveStreamProps) {
         <h3 className="text-white text-center text-[60px] md:text-[120px] font-bold mb-12 md:mb-7 drop-shadow-lg">
           LiveStream
         </h3>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-screen-xl mx-auto px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-screen-xl mx-auto">
           {items.map((item, index) => (
             <Link
               href={item?.link || "#"}
               key={index}
-              className="flex items-center-safe justify-around gap-10 border border-primary rounded-xl overflow-visible px-4 py-0 bg-white"
+              className="flex items-center-safe justify-around gap-5 border border-primary rounded-xl overflow-visible py-0 bg-white"
             >
               <div className="flex items-center gap-4">
                 <div
@@ -52,7 +52,7 @@ export default function LiveStream({ items }: LiveStreamProps) {
                 <div className="flex flex-col items-center text-sm">
                   <div
                     className={cn(
-                      "w-10 h-10 flex items-center justify-center rounded-full border-2 bg-transparent text-gray-700",
+                      "w-6 h-6 p-1 flex items-center justify-center rounded-full border-2 bg-transparent text-gray-700",
                       item?.color === "red" && "border-accent2",
                       item?.color === "blue" && "border-primary",
                       item?.color === "purple" && "border-accent1"
@@ -65,7 +65,7 @@ export default function LiveStream({ items }: LiveStreamProps) {
                       strokeWidth={2}
                       stroke="currentColor"
                       className={cn(
-                        "w-6 h-6",
+                        "w-5 h-5",
                         item?.color === "red" && "text-accent2",
                         item?.color === "blue" && "text-primary",
                         item?.color === "purple" && "text-accent1"
@@ -74,9 +74,7 @@ export default function LiveStream({ items }: LiveStreamProps) {
                       <path d="M6 4v16l12-8-12-8z" />
                     </svg>
                   </div>
-                  <p className="font-medium text-gray-700 mt-2">
-                    {item?.label}
-                  </p>
+                  <p className="text-xs text-gray-700 mt-2">{item?.label}</p>
                 </div>
               </div>
               <div className="flex flex-col items-end justify-end w-24 gap-2">
