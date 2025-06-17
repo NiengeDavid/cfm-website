@@ -14,8 +14,9 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const navLink = (text: string) => {
-    const href = `/${text.toLowerCase().replace(/\s+/g, "-")}`;
-    const isActive = pathname === href || (text === "Home" && pathname === "/");
+    const href =
+      text === "Home" ? "/" : `/${text.toLowerCase().replace(/\s+/g, "-")}`;
+    const isActive = pathname === href;
 
     return (
       <Link
