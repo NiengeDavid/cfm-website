@@ -13,37 +13,20 @@ import Container from "./container";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
-const testimonials = [
-  {
-    id: 1,
-    greeting: "Good morning Sir,",
-    content:
-      "Thank you sir for the labour Room on Friday. I was truly blessed... I had severe back and chest pains on Friday. During the labour room, while praying, I kept stretching as I couldn't pace for long... You gave a word concerning healing from a back pain and I received it! I slept and woke up sweating but with no pain, continued with activities for the day, then I remembered the prophecy. I am fine and I feel better than I've felt in days!",
-    closing: "God forever be praised",
-    thankYou: "Thank you sir",
-    signature: "Sis SI",
-  },
-  {
-    id: 2,
-    greeting: "Dear Pastor,",
-    content:
-      "I want to testify of God's goodness in my life. Last month during the prayer session, you prophesied about breakthrough in my business. I'm happy to report that my business has experienced unprecedented growth. Orders are coming in from different quarters and I can barely keep up with the demand.",
-    closing: "To God be the glory",
-    thankYou: "Thank you for your prayers",
-    signature: "Bro. Michael",
-  },
-  {
-    id: 3,
-    greeting: "Good evening Pastor,",
-    content:
-      "I write to appreciate God for what He has done in my family. During the last service, you prayed for my husband's job situation. I'm excited to inform you that he got a call for an interview and has been offered a better position with a significant salary increase.",
-    closing: "God is faithful",
-    thankYou: "We are grateful",
-    signature: "Mrs. Grace",
-  },
-];
+interface Testimonial {
+  id: number;
+  greeting: string;
+  content: string;
+  closing: string;
+  thankYou: string;
+  signature: string;
+}
 
-export default function Testimonials() {
+interface TestimonialsProps {
+  testimonials: Testimonial[];
+}
+
+export default function Testimonials({ testimonials }: TestimonialsProps) {
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
@@ -76,7 +59,7 @@ export default function Testimonials() {
           <div className="max-w-4xl mx-auto">
             <Carousel setApi={setApi} className="w-full">
               <CarouselContent>
-                {testimonials.map((testimonial) => (
+                {testimonials?.map((testimonial) => (
                   <CarouselItem key={testimonial.id}>
                     <Card className="border-0 shadow-none">
                       <CardContent className="p-0">
@@ -145,7 +128,7 @@ export default function Testimonials() {
                 <button
                   key={index}
                   onClick={() => api?.scrollTo(index)}
-                  className={`w-3 h-3 rounded-full transition-all ${
+                  className={`w-3 h-3 rounded-full transition-all cursor-pointer ${
                     current === index + 1 ? "bg-primary w-6" : "bg-blue-200"
                   }`}
                 />

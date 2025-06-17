@@ -3,6 +3,7 @@ import EventsCarousel from "@/components/eventsCarousel";
 import HeroCard from "@/components/heroCard";
 import LatestSermon from "@/components/latestSermon";
 import LiveStream from "@/components/livestream";
+import Newsletter from "@/components/newsletter";
 import Partnership from "@/components/partnership";
 import RelevantChurch from "@/components/relevantChurch";
 import ResourcesSection from "@/components/resourceSection";
@@ -23,7 +24,8 @@ export default function HomePage() {
       <ResourcesSection resources={homeDetails?.resources} />
       <EventsCarousel events={homeDetails?.events} />
       <Partnership />
-      <Testimonials />
+      <Testimonials testimonials={homeDetails?.testimonials} />
+      <Newsletter data={homeDetails?.newsletter} />
     </div>
   );
 }
