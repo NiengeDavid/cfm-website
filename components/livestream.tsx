@@ -26,8 +26,10 @@ export default function LiveStream({ items }: LiveStreamProps) {
         </h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-screen-xl mx-auto">
           {items.map((item, index) => (
-            <Link
+            <a
               href={item?.link || "#"}
+              target="_blank"
+              rel="noopener noreferrer"
               key={index}
               className="flex items-center-safe justify-around gap-5 border border-primary rounded-xl overflow-visible py-0 bg-white"
             >
@@ -89,7 +91,7 @@ export default function LiveStream({ items }: LiveStreamProps) {
                   {item?.name}
                 </span>
               </div>
-            </Link>
+            </a>
           ))}
         </div>
       </Container>

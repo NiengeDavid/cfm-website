@@ -64,7 +64,7 @@ export const homeDetails = {
     {
       title: "Euphorial Devotionals",
       image: "/assets/devotional.png",
-      link: "https://theeuphoria.vercel.app/",
+      link: "https://theeuphoria.vercel.app/devotionals",
     },
     {
       title: "Daily Confessions",
