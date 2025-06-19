@@ -37,11 +37,13 @@ export const aboutDetails = {
       },
       {
         title: "The Trinity",
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        description:
+          "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       },
       {
         title: "Salvation",
-        description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+        description:
+          "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       },
       {
         title: "Water Baptism",
@@ -55,6 +57,42 @@ export const aboutDetails = {
       },
       {
         title: "Growing Relationship",
+        description:
+          "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      },
+    ],
+  },
+  coreValues: {
+    sectionTitle: "Our Core Values",
+    imageSrc: "/assets/hug.png",
+    values: [
+      {
+        title: "Love",
+        description:
+          "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      },
+      {
+        title: "Commitment",
+        description:
+          "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      },
+      {
+        title: "Excellence",
+        description:
+          "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      },
+      {
+        title: "Faithfulness",
+        description:
+          "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      },
+      {
+        title: "Excellence",
+        description:
+          "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      },
+      {
+        title: "Excellence",
         description:
           "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
       },
