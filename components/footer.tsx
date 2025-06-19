@@ -39,9 +39,9 @@ export default function Footer() {
           {/* Top Section */}
           <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-10">
             {/* Logo */}
-            <div className="flex-shrink-0">
+            <Link href={"/"} className="flex-shrink-0">
               <Image src={logo} alt="CFM Logo" width={157} height={38} />
-            </div>
+            </Link>
 
             {/* Footer Links */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 flex-grow">
