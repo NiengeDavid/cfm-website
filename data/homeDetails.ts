@@ -1,6 +1,7 @@
 export const homeDetails = {
   bgImage: "/assets/bg1.png",
   title: "RAISING A HAPPY & SUCCESSFUL PEOPLE",
+  center: true,
   description: "This is a detailed description of the home page.",
   features: [
     "Feature 1: Responsive Design",

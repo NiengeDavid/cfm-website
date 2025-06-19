@@ -5,14 +5,15 @@ import Image from "next/image";
 interface HeroCardProps {
   bgImage?: string;
   title?: string;
+  center?: boolean;
 }
 
 const bottomImage = "/assets/banner.png";
 
-export default function HeroCard({ bgImage, title }: HeroCardProps) {
+export default function HeroCard({ bgImage, title, center }: HeroCardProps) {
   return (
     <div
-      className={`relative h-full  bg-cover bg-center`}
+      className={`relative h-full bg-cover bg-center`}
       style={{ backgroundImage: `url(${bgImage})` }}
     >
       <div className="bg-gradient-overlay"></div>
@@ -30,16 +31,17 @@ export default function HeroCard({ bgImage, title }: HeroCardProps) {
         </div>
       </Container>
       {/* The Bottom Bar Image - Positioned Absolutely */}
-
-      <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-11/12 max-w-2xl z-20 lg:-bottom-12">
-        <Image
-          src={bottomImage}
-          alt="Details bar"
-          width={1024}
-          height={176}
-          layout="responsive"
-        />
-      </div>
+      {center !== false && (
+        <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-11/12 max-w-2xl z-20 lg:-bottom-12">
+          <Image
+            src={bottomImage}
+            alt="Details bar"
+            width={1024}
+            height={176}
+            layout="responsive"
+          />
+        </div>
+      )}
     </div>
   );
 }

@@ -14,7 +14,11 @@ import { homeDetails } from "@/data/homeDetails";
 export default function HomePage() {
   return (
     <div className="w-full">
-      <HeroCard bgImage={homeDetails?.bgImage} title={homeDetails?.title} />
+      <HeroCard
+        bgImage={homeDetails?.bgImage}
+        title={homeDetails?.title}
+        center={homeDetails?.center}
+      />
       <div className="w-full">
         <LatestSermon data={homeDetails?.latestSermon} />
       </div>
