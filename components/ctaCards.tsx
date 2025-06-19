@@ -36,7 +36,7 @@ export default function CtaCards({ ctaCards, isCard = false }: CtaCardsProps) {
               >
                 <h3 className="text-5xl font-bold">{card.title}</h3>
                 <TextProvider
-                  className={`mt-2 font-extralight text-sm max-w-xxl ${isCard ? "text-black" : "text-black"}`}
+                  className={`mt-2 font-extralight  ${isCard ? "text-black" : "text-black"}`}
                 >
                   {card.description}
                 </TextProvider>

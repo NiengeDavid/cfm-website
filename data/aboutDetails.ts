@@ -7,16 +7,16 @@ export const aboutDetails = {
     {
       title: "Our Vision",
       description: `
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. 
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+        To fill our world with the beautiful message of our Lord Jesus, presenting a people mature in Him.
+        To fill our world with the beautiful message of our Lord Jesus, presenting a people mature in Him.
       `,
       image: "/assets/hug.png",
     },
     {
       title: "Our Mission",
       description: `
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. 
-        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+        To bring the lost to the saving knowledge of our Lord Jesus Christ, helping them become all that God has designed for them to be by teaching and educating the total man, spirit, soul and body by the word of God 
+        And by so doing, raising a body of anointed believers who together as God's family are spreading the anointed, uncompromised truth of God's Word through every available means to the very ends of the earth.
       `,
       image: "/assets/hug.png",
     },
