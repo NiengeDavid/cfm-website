@@ -1,3 +1,4 @@
+import AboutCFMSection from "@/components/aboutSection";
 import CtaCards from "@/components/ctaCards";
 import HeroCard from "@/components/heroCard";
 import { aboutDetails } from "@/data/aboutDetails";
@@ -11,6 +12,7 @@ export default function AboutPage() {
         center={aboutDetails?.center}
       />
       <CtaCards ctaCards={aboutDetails?.visionMission} />
+      <AboutCFMSection content={aboutDetails?.aboutCFM} />
     </div>
   );
 }
