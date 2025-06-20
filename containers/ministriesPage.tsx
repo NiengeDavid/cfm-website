@@ -1,4 +1,5 @@
 import HeroCard from "@/components/heroCard";
+import Ministries from "@/components/ministries";
 import { ministriesDetails } from "@/data/ministriesDetails";
 
 export default function MinistriesPage() {
@@ -9,6 +10,7 @@ export default function MinistriesPage() {
         bgImage={ministriesDetails?.bgImage}
         center={ministriesDetails?.center}
       />
+      <Ministries content={ministriesDetails?.ministries} />
     </div>
   );
 }
