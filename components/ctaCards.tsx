@@ -30,7 +30,7 @@ export default function CtaCards({ ctaCards, isCard = false }: CtaCardsProps) {
               {/* Text Content - Always comes first in DOM for mobile */}
               <div
                 className={`
-                flex-1 max-w-screen-md lg:w-full p-4
+                flex-1 max-w-screen-md lg:w-full
                 ${isCard ? "p-8 lg:p-8" : "text-center lg:text-left"}
               `}
               >
