@@ -45,12 +45,12 @@ export default function CtaCards({ ctaCards, isCard = false }: CtaCardsProps) {
               {/* Image - Position swaps on desktop based on index */}
               <div
                 className={`
-                flex-1 overflow-hidden p-0 w-full
+                flex-1 overflow-hidden p-0 
                 ${
                   isCard
                     ? index % 2 === 0
-                      ? "rounded-r-xl lg:rounded-l-none"
-                      : "rounded-l-xl lg:rounded-r-none"
+                      ? "w-full rounded-r-xl lg:rounded-l-none"
+                      : "w-full rounded-l-xl lg:rounded-r-none"
                     : "rounded-lg"
                 }
               `}
