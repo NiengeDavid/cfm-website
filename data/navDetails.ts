@@ -2,7 +2,7 @@ export const navDetails = {
   navItems: [
     "Home",
     "About",
-    "Centres",
+    "Centers",
     "Ministries",
     "Give",
     "Partnership",

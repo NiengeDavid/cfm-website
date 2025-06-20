@@ -2,7 +2,7 @@ export const aboutDetails = {
   bgImage: "/assets/aboutBg.png",
   title: "BECOMING ALL GOD HAS DESIGNED YOU TO BE",
   center: false,
-  description: "This is a detailed description of the home page.",
+  description: "This is a detailed description of the about page.",
   visionMission: [
     {
       title: "Our Vision",

@@ -22,6 +22,7 @@ export default function Navbar() {
       <Link
         key={text}
         href={href}
+        onClick={() => setIsOpen(false)}
         className={`w-fit mx-auto text-black text-base sm:text-lg px-2 py-1 hover:text-white ${
           isActive ? "border-b-2 border-accent1" : ""
         }`}
