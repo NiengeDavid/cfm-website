@@ -45,7 +45,7 @@ export default function CtaCards({ ctaCards, isCard = false }: CtaCardsProps) {
               {/* Image - Position swaps on desktop based on index */}
               <div
                 className={`
-                flex-1 overflow-hidden
+                flex-1 overflow-hidden p-0 w-full
                 ${
                   isCard
                     ? index % 2 === 0
