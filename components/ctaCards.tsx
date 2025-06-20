@@ -15,23 +15,23 @@ interface CtaCardsProps {
 
 export default function CtaCards({ ctaCards, isCard = false }: CtaCardsProps) {
   return (
-    <section className="bg-white py-12 mt-5 lg:mt-16">
+    <section className="bg-transparent py-24 lg:py-32">
       <Container>
-        <div className="mx-auto space-y-8">
+        <div className="mx-auto space-y-20">
           {ctaCards.map((card, index) => (
             <div
               key={index}
               className={`
-                flex flex-col gap-12 w-full items-center
-                ${isCard ? "lg:flex-row bg-gray-50 p-6 rounded-xl" : "lg:flex-row"}
+                flex flex-col gap-10 w-full items-center
+                ${isCard ? "lg:flex-row bg-gray-50 p-0 shadow-xl rounded-xl" : "lg:flex-row"}
                 ${index % 2 === 0 ? "" : "lg:flex-row-reverse"}
               `}
             >
               {/* Text Content - Always comes first in DOM for mobile */}
               <div
                 className={`
-                flex-1 max-w-screen-md lg:w-full
-                ${isCard ? "lg:p-8" : "text-center lg:text-left"}
+                flex-1 max-w-screen-md lg:w-full p-4
+                ${isCard ? "p-8 lg:p-8" : "text-center lg:text-left"}
               `}
               >
                 <h3 className="text-5xl font-bold">{card.title}</h3>
