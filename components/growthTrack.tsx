@@ -1,6 +1,5 @@
 import Container from "./container";
 import Image from "next/image";
-import { Button } from "./ui/button";
 
 export default function GrowthTrack() {
   return (
@@ -16,7 +15,7 @@ export default function GrowthTrack() {
               Discover Jesus' love and begin the journey of becoming all that
               God has called you to be and grow strong in faith.
             </p>
-            <div className="max-w-lg ml-auto">
+            <div className="max-w-lg md:ml-auto">
               <a
                 href="https://growth.christfamilyministries.org"
                 target="_blank"
