@@ -21,7 +21,7 @@ export default function Newsletter({ data }: NewsletterProps) {
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
           {/* Text and Input */}
           <div className="md:w-1/2 text-center md:text-left">
-            <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-4">
+            <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-4">
               Get Daily <br className="hidden md:inline" /> Scriptures To{" "}
               <br className="hidden md:inline" /> Your Inbox
             </h2>

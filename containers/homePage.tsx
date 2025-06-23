@@ -1,5 +1,5 @@
-import GenCarousel from "@/components/carousel";
 import EventsCarousel from "@/components/eventsCarousel";
+import GrowthTrack from "@/components/growthTrack";
 import HeroCard from "@/components/heroCard";
 import LatestSermon from "@/components/latestSermon";
 import LiveStream from "@/components/livestream";
@@ -29,6 +29,7 @@ export default function HomePage() {
       <EventsCarousel events={homeDetails?.events} />
       <Partnership />
       <Testimonials testimonials={homeDetails?.testimonials} />
+      <GrowthTrack />
       <Newsletter data={homeDetails?.newsletter} />
     </div>
   );
