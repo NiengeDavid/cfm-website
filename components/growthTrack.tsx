@@ -8,22 +8,22 @@ export default function GrowthTrack() {
       <Container>
         <div className="container mx-auto flex flex-col md:flex-row-reverse items-center justify-between gap-8">
           {/* Text and Input */}
-          <div className="md:w-full text-center md:text-right">
-            <h2 className="text-4xl max-w-lg lg:text-6xl font-bold text-gray-900 mb-4">
+          <div className="md:w-full flex flex-col justify-end text-center md:text-right">
+            <h2 className="text-4xl ml-auto max-w-lg lg:text-6xl font-bold text-gray-900 mb-4">
               Commit to Membership
             </h2>
-            <p className="text-black font-extralight mb-6 max-w-lg mx-auto md:mx-0">
-              Discover how you can grow and make an impact. Our Growth Track is
-              designed to help you find your purpose and connect with others.
+            <p className="text-black font-extralight mb-6 max-w-lg ml-auto">
+              Discover Jesus' love and begin the journey of becoming all that
+              God has called you to be and grow strong in faith.
             </p>
-            <div className="max-w-lg max-auto">
+            <div className="max-w-lg ml-auto">
               <a
-                href="https://example.com/growth-track"
+                href="https://growth.christfamilyministries.org"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700 transition"
+                className="inline-block bg-primary text-white font-semibold py-2 px-6 rounded-md hover:bg-primary-accent transition"
               >
-                Learn More
+                Start Today
               </a>
             </div>
           </div>
