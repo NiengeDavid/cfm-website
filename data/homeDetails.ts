@@ -12,7 +12,7 @@ export const homeDetails = {
   ],
   latestSermon: {
     title: "Watch the Latest Sermon",
-    details: "NOV 7 - In the Waiting by Pastor Arome Tokula",
+    details: "Jun 7 - Blood Covenant by Pastor Arome Tokula",
     video: {
       url: "https://www.youtube.com/embed/xGLIn-IDDPM?si=zfspNh2c4EjB7uCS",
       autoplay: true,
