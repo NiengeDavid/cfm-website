@@ -29,7 +29,7 @@ export default function HomePage() {
       <EventsCarousel events={homeDetails?.events} />
       <Partnership />
       <Testimonials testimonials={homeDetails?.testimonials} />
-      <GrowthTrack />
+      <GrowthTrack data={homeDetails?.growthTrack} />
       <Newsletter data={homeDetails?.newsletter} />
     </div>
   );

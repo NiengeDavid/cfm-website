@@ -116,6 +116,18 @@ export const homeDetails = {
       signature: "Mrs. Grace",
     },
   ],
+  growthTrack: {
+    title: "Commit to Membership",
+    description: "Discover Jesus' love and begin the journey of becoming all that God has called you to be and grow strong in faith.",
+    cta: {
+      href: "https://growth.christfamilyministries.org",
+      text: "Start Today",
+    },
+    image: {
+      url: "/assets/growth.jpg",
+      alt: "People in growth track brands",
+    },
+  },
   newsletter: {
     description:
       " It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
