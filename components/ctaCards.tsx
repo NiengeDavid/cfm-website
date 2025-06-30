@@ -1,16 +1,41 @@
 import Image from "next/image";
 import Container from "./container";
 import TextProvider from "./textProvider";
+import {
+  FaFacebook,
+  FaTwitter,
+  FaInstagram,
+  FaYoutube,
+  FaTelegram,
+} from "react-icons/fa";
 
 interface CtaCards {
-  title: string;
+  title?: string;
   description: string;
+  socialIcons?: { name: string; href: string; icon: string }[];
   image: string;
 }
 
 interface CtaCardsProps {
   ctaCards: CtaCards[];
   isCard?: boolean;
+}
+
+function getIcon(name: string) {
+  switch (name) {
+    case "facebook":
+      return <FaFacebook size={28} />;
+    case "twitter":
+      return <FaTwitter size={28} />;
+    case "instagram":
+      return <FaInstagram size={28} />;
+    case "youtube":
+      return <FaYoutube size={28} />;
+    case "send":
+      return <FaTelegram size={28} />;
+    default:
+      return null;
+  }
 }
 
 export default function CtaCards({ ctaCards, isCard = false }: CtaCardsProps) {
@@ -34,12 +59,32 @@ export default function CtaCards({ ctaCards, isCard = false }: CtaCardsProps) {
                 ${isCard ? "p-8 lg:p-8" : "text-center lg:text-left"}
               `}
               >
-                <h3 className="text-5xl font-bold">{card.title}</h3>
+                <h3
+                  className={`w-fit mx-auto text-5xl font-bold lg:mx-0 ${!isCard ? "border-b pb-2 border-primary-accent" : "border-0"}`}
+                >
+                  {card.title}
+                </h3>
                 <TextProvider
                   className={`mt-2 font-extralight  ${isCard ? "text-black" : "text-black"}`}
                 >
                   {card.description}
                 </TextProvider>
+                {card.socialIcons && card.socialIcons.length > 0 && (
+                  <div className="flex justify-center gap-4 mt-8 lg:justify-start">
+                    {card.socialIcons.map(({ name, icon, href }) => (
+                      <a
+                        href={href}
+                        key={name}
+                        aria-label={name}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-primary hover:text-black transition-colors"
+                      >
+                        {getIcon(icon)}
+                      </a>
+                    ))}
+                  </div>
+                )}
               </div>
 
               {/* Image - Position swaps on desktop based on index */}
@@ -57,7 +102,7 @@ export default function CtaCards({ ctaCards, isCard = false }: CtaCardsProps) {
               >
                 <Image
                   src={card.image}
-                  alt={card.title}
+                  alt={card.title || "CTA Card Image"}
                   width={728}
                   height={484}
                   className={`
