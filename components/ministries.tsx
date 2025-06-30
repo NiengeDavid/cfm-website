@@ -3,6 +3,7 @@ import Container from "./container";
 
 interface MinistryUnit {
   name: string;
+  desc?: string;
   image: string;
 }
 
@@ -27,10 +28,15 @@ export default function Ministries({ content }: MinistryUnitsProps) {
                 alt={unit.name}
                 className="w-full h-80 object-cover"
               />
-              <div className="flex-grow flex items-center justify-center p-4">
-                <h4 className="text-lg py-3 font-light text-black">
+              <div className="flex-grow flex-col items-center justify-center gap-4 p-4">
+                <h4 className="text-lg py-3 font-normal text-black">
                   {unit.name}
                 </h4>
+                {unit.desc && (
+                  <p className="text-sm text-black font-extralight">
+                    {unit.desc}
+                  </p>
+                )}
               </div>
             </div>
           ))}

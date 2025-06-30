@@ -66,4 +66,26 @@ export const leadershipDetails = {
       image: "/assets/hug.png",
     },
   ],
+  residentPastors: [
+    {
+      name: "Simon and Iveren Akaan",
+      desc: "Resident Pastor, CFC Gboko",
+      image: "/assets/pastors.jpeg",
+    },
+    {
+      name: "Atom and Fanen Ahura",
+      desc: "Resident Pastor, CFC Makurdi",
+      image: "/assets/pastors.jpeg",
+    },
+    {
+      name: "Abel and Esther Breath",
+      desc: "Resident Pastor, CFC Kaduna",
+      image: "/assets/pastors.jpeg",
+    },
+    {
+      name: "John Eze",
+      desc: "Resident Pastor, CFC Sagamu",
+      image: "/assets/pastors.jpeg",
+    },
+  ],
 };
