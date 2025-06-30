@@ -66,6 +66,7 @@ export const leadershipDetails = {
       image: "/assets/hug.png",
     },
   ],
+  residentPastorsTitle: "Meet Our Resident Pastors",
   residentPastors: [
     {
       name: "Simon and Iveren Akaan",

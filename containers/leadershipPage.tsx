@@ -16,7 +16,7 @@ export default function LeadershipPage() {
       <div className="w-full bg-bg py-24 lg:py-36">
         <Container>
           <h2 className="w-fit mx-auto text-3xl text-center md:text-6xl font-bold border-b pb-3 border-primary-accent">
-            Meet Our Resident Pastors
+            {leadershipDetails?.residentPastorsTitle}
           </h2>
           <div className="w-full">
             <Ministries content={leadershipDetails?.residentPastors} />
