@@ -146,3 +146,15 @@
     z-index: 1;
   }
 }
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.transition-all {
+  transition-property: all;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
