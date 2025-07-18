@@ -86,7 +86,7 @@ export default function GiveForm() {
   };
 
   return (
-    <div className="bg-bg rounded-lg shadow-xl py-28 px-2 mx-auto">
+    <div className="bg-bg rounded-lg shadow-xl py-28 md:pb-80 px-2 mx-auto">
       <Container>
         <div className={`relative ${isFlipped ? "h-full" : "h-auto"}`}>
           {/* Front Side - Form */}
