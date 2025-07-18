@@ -1,6 +1,7 @@
 import HeroCard from "@/components/heroCard";
 import PartnershipCTA from "@/components/partnershipCTA";
 import { partnershipDetails } from "@/data/partnershipDetails";
+import { PartnerForm } from "@/components/partnerForm";
 
 export default function PartnershipPage() {
   return (
@@ -17,6 +18,7 @@ export default function PartnershipPage() {
         image={partnershipDetails?.cta?.image}
         className="bg-bg"
       />
+      <PartnerForm />
     </div>
   );
 }
