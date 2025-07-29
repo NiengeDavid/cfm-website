@@ -22,8 +22,9 @@ export default function Newsletter({ data }: NewsletterProps) {
           {/* Text and Input */}
           <div className="md:w-1/2 text-center md:text-left">
             <h2 className="text-4xl lg:text-6xl font-bold text-gray-900 mb-4">
-              Get Daily <br className="hidden md:inline" /> Scriptures To{" "}
-              <br className="hidden md:inline" /> Your Inbox
+              Stay connected
+              <br className="hidden md:inline" /> and never miss{" "}
+              <br className="hidden md:inline" /> a thing!
             </h2>
             <p className="text-black font-extralight mb-6 max-w-md mx-auto md:mx-0">
               {data?.description}

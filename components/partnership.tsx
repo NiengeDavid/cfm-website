@@ -45,16 +45,19 @@ export default function Partnership() {
                 <h2 className="text-4xl lg:text-5xl font-bold">Partnership</h2>
 
                 <p className="leading-relaxed max-w-xl">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  The point of using Lorem Ipsum is that it has a more-or-less
-                  normal distribution of letters, as opposed to using 'Content
-                  here, content here', making it look like readable English.
+                  When you partner with us, you're not just giving — you're
+                  going with us. Every soul reached, every life transformed,
+                  every message preached is fruit that abounds to your account.
+                  Your partnership helps us preach Christ, raise mature
+                  believers, and bring hope to nations. Join us in this kingdom
+                  assignment. Be a part of something eternal.
                 </p>
 
-                <button className="bg-accent2 hover:bg-red-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl cursor-pointer">
-                  Become a partner
-                </button>
+                <a href="/partnership">
+                  <button className="bg-accent2 hover:bg-red-700 text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200 shadow-lg hover:shadow-xl cursor-pointer">
+                    Partner today!
+                  </button>
+                </a>
               </div>
             </div>
           </div>

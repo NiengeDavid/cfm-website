@@ -75,17 +75,17 @@ export const homeDetails = {
   ],
   events: [
     {
-      title: "Beyond Now",
-      image: "/assets/events/beyond.png",
-      link: "https://registerbethel.com",
+      title: "Faith Adventure 2025",
+      image: "/assets/events/FA2025Banner.jpeg",
+      link: "https://app.christfamilyministries.org",
     },
     {
-      title: "Life Conversations",
-      image: "/assets/events/life.png",
+      title: "24 Anniversary Celebration",
+      image: "/assets/events/FA2025Ann.jpeg",
       link: "",
     },
-    { title: "Bethel", image: "/assets/events/bethel.png" },
-    { title: "Waiting", image: "/assets/events/waiting.png" },
+    // { title: "Bethel", image: "/assets/events/bethel.png" },
+    // { title: "Waiting", image: "/assets/events/waiting.png" },
   ],
   testimonials: [
     {
@@ -118,7 +118,8 @@ export const homeDetails = {
   ],
   growthTrack: {
     title: "Commit to Membership",
-    description: "Discover Jesus' love and begin the journey of becoming all that God has called you to be and grow strong in faith.",
+    description:
+      "Commit to membership by joining GrowthTrack today; a simple path where you'll grow in your walk with God, discover your purpose, and learn more about our church family. Your journey starts here.",
     cta: {
       href: "https://growth.christfamilyministries.org",
       text: "Start Today",
@@ -130,7 +131,7 @@ export const homeDetails = {
   },
   newsletter: {
     description:
-      " It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "Subscribe to our newsletter and be the first to receive updates on upcoming events, powerful teachings, ministry news, and inspiring stories from our community. It’s the easiest way to stay plugged in and spiritually refreshed.",
     image: "/assets/hug.png",
   },
 };
