@@ -27,7 +27,7 @@ export default function CoreValuesSection({ content }: CoreValuesProps) {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
             <div className="flex flex-col gap-8 text-center md:text-start">
-              {content.values.slice(0, 3).map((value, idx) => (
+              {content.values.slice(0, 2).map((value, idx) => (
                 <div key={idx}>
                   <h4 className="text-2xl text-black font-light mb-2">
                     {value.title}
@@ -50,7 +50,7 @@ export default function CoreValuesSection({ content }: CoreValuesProps) {
             </div>
 
             <div className="flex flex-col gap-8 text-center md:text-start">
-              {content.values.slice(3).map((value, idx) => (
+              {content.values.slice(2).map((value, idx) => (
                 <div key={idx}>
                   <h4 className="text-2xl text-black font-light mb-2">
                     {value.title}
