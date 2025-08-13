@@ -32,6 +32,7 @@ import { CalendarIcon } from "lucide-react";
 import Container from "./container";
 import { useState } from "react";
 import { toast } from "sonner";
+import TextProvider from "./textProvider";
 
 const formSchema = z.object({
   firstName: z.string().optional(),
@@ -92,7 +93,7 @@ export function PartnerForm() {
   };
 
   return (
-    <div className="bg-bg rounded-lg shadow-xl py-16 md:py-28 md:pb-80 mx-auto">
+    <div className="bg-bg rounded-lg shadow-xl py-16 pb-[50rem] md:py-28 md:pb-80 mx-auto">
       <Container>
         <h1 className="text-black mb-8 md:mb-12 scroll-m-20 text-center text-4xl lg:text-7xl font-extrabold tracking-tight text-balance">
           Become a Partner
@@ -381,21 +382,38 @@ export function PartnerForm() {
 
           {/* Back Side - Thank You & Account Details */}
           <div
-            className={`bg-white mx-auto py-16 md:py-32 px-4 md:px-16 transition-all duration-500 ${isFlipped ? "opacity-100" : "absolute opacity-0 rotate-y-180"}`}
+            className={`z-10 bg-white mx-auto py-16 md:py-32 px-4 md:px-16 transition-all duration-500 ${isFlipped ? "opacity-100" : "absolute opacity-0 rotate-y-180"}`}
           >
-            <div className="flex flex-col md:flex-row gap-8 h-full">
+            <div className="flex flex-col md:flex-row-reverse gap-8 h-full items-start">
               {/* Thank You Message - Left Side */}
-              <div className="flex-1 flex flex-col justify-center">
+              <div className="flex-1 flex flex-col justify-center border-l-0 md:border-l-2 border-accent3 pl-0 md:pl-8">
                 <h2 className="text-3xl font-bold text-accent2 mb-4">
                   Welcome Partner!
                 </h2>
+                <TextProvider className="">
+                  {` 
+                    The Lord bless you. The Lord hear you in the day of trouble. The name of the God of Jacob defend you.
+                    
+                    The Lord send you help from the sanctuary, And strengthen you out of Zion. May He remember all your offerings And accept your sacrifices.
+
+                    May He grant you the desires of your heart And fulfill all your plans according to His purpose. We will rejoice in your testimony And lift up the banner of victory in the name of our God.
+
+                    Amen!
+                  `}
+                </TextProvider>
                 <p className="text-lg mb-6">
                   Thank you for joining our partnership program. Your commitment
                   helps us fulfill our mission and vision.
                 </p>
                 <p className="text-lg">
                   A confirmation has been sent to your email address. If you
-                  have any questions, please contact us at partners@church.org.
+                  have any questions, please contact us at{" "}
+                  <a
+                    href="mailto:support@christfamilyministries.org"
+                    className="underline cursor-pointer text-secondary"
+                  >
+                    support@christfamilyministries.org
+                  </a>
                 </p>
                 <Button
                   onClick={resetForm}
@@ -406,31 +424,63 @@ export function PartnerForm() {
               </div>
 
               {/* Account Details - Right Side */}
-              <div className="flex-1 border-l-0 md:border-l-2 border-accent3 pl-0 md:pl-8">
-                <h3 className="text-xl font-bold mb-4">
+              <div className="flex-1 w-full">
+                <h3 className="text-3xl font-extrabold mb-6">
                   Partnership Payment Details
                 </h3>
-                <div className="space-y-4">
+                <div className="space-y-6 text-lg">
                   <div>
-                    <h4 className="font-semibold">NGN Account</h4>
-                    <p>Bank: Access Bank</p>
-                    <p>Account Name: Church Partners</p>
-                    <p>Account Number: 1234567890</p>
+                    <h4 className="font-bold text-secondary text-xl pb-0.5">
+                      NGN Account
+                    </h4>
+                    <p>
+                      <span className="font-semibold">Bank:</span> Access Bank
+                    </p>
+                    <p>
+                      <span className="font-semibold">Account Name:</span>{" "}
+                      Church Partners
+                    </p>
+                    <p>
+                      <span className="font-semibold">Account Number:</span>{" "}
+                      1234567890
+                    </p>
                   </div>
                   <div>
-                    <h4 className="font-semibold">USD Account</h4>
-                    <p>Bank: Access Bank</p>
-                    <p>Account Name: Church Partners</p>
-                    <p>Account Number: 0987654321</p>
+                    <h4 className="font-bold text-secondary text-xl pb-0.5">
+                      USD Account
+                    </h4>
+                    <p>
+                      <span className="font-semibold">Bank:</span> Access Bank
+                    </p>
+                    <p>
+                      <span className="font-semibold">Account Name:</span>{" "}
+                      Church Partners
+                    </p>
+                    <p>
+                      <span className="font-semibold">Account Number:</span>{" "}
+                      0987654321
+                    </p>
                   </div>
                   <div>
-                    <h4 className="font-semibold">GBP Account</h4>
-                    <p>Bank: Access Bank</p>
-                    <p>Account Name: Church Partners</p>
-                    <p>Account Number: 5678901234</p>
+                    <h4 className="font-bold text-secondary text-xl pb-0.5">
+                      GBP Account
+                    </h4>
+                    <p>
+                      <span className="font-semibold">Bank:</span> Access Bank
+                    </p>
+                    <p>
+                      <span className="font-semibold">Account Name:</span>{" "}
+                      Church Partners
+                    </p>
+                    <p>
+                      <span className="font-semibold">Account Number:</span>{" "}
+                      5678901234
+                    </p>
                   </div>
                   <div className="mt-6">
-                    <h4 className="font-semibold">Payment Instructions</h4>
+                    <h4 className="font-bold text-secondary text-xl pb-0.5">
+                      Payment Instructions
+                    </h4>
                     <p>Please include your name as reference</p>
                     <p>Monthly commitment due by the 1st</p>
                   </div>
