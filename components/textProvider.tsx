@@ -1,3 +1,5 @@
+import React from "react";
+
 interface TextProviderProps {
   children: React.ReactNode;
   className?: string;
@@ -9,11 +11,15 @@ export default function TextProvider({
 }: TextProviderProps) {
   const renderContent = () => {
     if (typeof children === "string") {
-      return children.split("\n").map((paragraph, index) => (
-        <p key={index} className="mb-4">
-          {paragraph}
-        </p>
-      ));
+      return children
+        .split("\n")
+        .map((paragraph, index) => (
+          <p
+            key={index}
+            className="mb-4"
+            dangerouslySetInnerHTML={{ __html: paragraph }}
+          />
+        ));
     }
     return children;
   };
