@@ -434,15 +434,15 @@ export function PartnerForm() {
                       NGN Account
                     </h4>
                     <p>
-                      <span className="font-semibold">Bank:</span> Access Bank
+                      <span className="font-semibold">Bank:</span> UBA PLC
                     </p>
                     <p>
                       <span className="font-semibold">Account Name:</span>{" "}
-                      Church Partners
+                      Christ Family Ministry
                     </p>
                     <p>
                       <span className="font-semibold">Account Number:</span>{" "}
-                      1234567890
+                      1014859341
                     </p>
                   </div>
                   <div>
@@ -450,18 +450,18 @@ export function PartnerForm() {
                       USD Account
                     </h4>
                     <p>
-                      <span className="font-semibold">Bank:</span> Access Bank
+                      <span className="font-semibold">Bank:</span> UBA PLC
                     </p>
                     <p>
                       <span className="font-semibold">Account Name:</span>{" "}
-                      Church Partners
+                      Christ Family Ministry
                     </p>
                     <p>
                       <span className="font-semibold">Account Number:</span>{" "}
-                      0987654321
+                      3002046153
                     </p>
                   </div>
-                  <div>
+                  {/* <div>
                     <h4 className="font-bold text-secondary text-xl pb-0.5">
                       GBP Account
                     </h4>
@@ -476,7 +476,7 @@ export function PartnerForm() {
                       <span className="font-semibold">Account Number:</span>{" "}
                       5678901234
                     </p>
-                  </div>
+                  </div> */}
                   <div className="mt-6">
                     <h4 className="font-bold text-secondary text-xl pb-0.5">
                       Payment Instructions

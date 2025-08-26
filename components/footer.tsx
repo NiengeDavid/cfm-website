@@ -84,7 +84,9 @@ export default function Footer() {
 
           {/* Legal Links */}
           <div className="mt-6 border-white/30 pt-6 text-center text-xs">
-            <p className="mb-2">© 2021 Christ Family Ministry</p>
+            <p className="mb-2">
+              © {new Date().getFullYear()} Christ Family Ministry
+            </p>
             <div className="flex flex-wrap justify-center gap-2">
               {legalLinks.map(({ label, href }) => (
                 <Link href={href} key={label} className="hover:underline">

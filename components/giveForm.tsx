@@ -330,6 +330,7 @@ export default function GiveForm() {
                   Bank Transfer Details
                 </h3>
                 <div className="space-y-6 text-xl">
+                  {/* Naira Account Details */}
                   <div>
                     <h4 className="font-bold text-secondary text-2xl pb-0.5">
                       NGN Account
@@ -338,21 +339,22 @@ export default function GiveForm() {
                       <span className="font-semibold text-black text-lg">
                         Bank:
                       </span>{" "}
-                      Access Bank
+                      Zenith Bank
                     </p>
                     <p>
                       <span className="font-semibold text-black text-lg">
                         Account Name:
                       </span>{" "}
-                      Church Giving
+                      Christ Family Ministry
                     </p>
                     <p>
                       <span className="font-semibold text-black text-lg">
                         Account Number:
                       </span>{" "}
-                      1234567890
+                      1012589549
                     </p>
                   </div>
+                  {/* USD Account Details */}
                   <div>
                     <h4 className="font-bold text-secondary text-2xl pb-0.5">
                       USD Account
@@ -361,22 +363,22 @@ export default function GiveForm() {
                       <span className="font-semibold text-black text-lg">
                         Bank:
                       </span>{" "}
-                      Access Bank
+                      UBA PLC
                     </p>
                     <p>
                       <span className="font-semibold text-black text-lg">
                         Account Name:
                       </span>{" "}
-                      Church Giving
+                      Christ Family Ministry
                     </p>
                     <p>
                       <span className="font-semibold text-black text-lg">
                         Account Number:
                       </span>{" "}
-                      0987654321
+                      3002046153
                     </p>
                   </div>
-                  <div>
+                  {/* <div>
                     <h4 className="font-bold text-secondary text-2xl pb-0.5">
                       GBP Account
                     </h4>
@@ -398,7 +400,7 @@ export default function GiveForm() {
                       </span>{" "}
                       5678901234
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
