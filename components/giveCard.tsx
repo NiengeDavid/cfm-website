@@ -11,7 +11,7 @@ interface AccountInfo {
 
 interface GiveCardProps {
   description: string[];
-  buttonText: string;
+  buttonText?: string;
   ngnAccount: AccountInfo;
   domAccount: AccountInfo;
 }
@@ -39,11 +39,13 @@ export default function GiveCard({ data }: { data: GiveCardProps }) {
               <p>Dollar Domiciliary Account</p>
               <p>{data.domAccount.bankName}</p>
             </div>
-            <Link href={"/partnership"} className="cursor-pointer">
+            {data.buttonText && (
+              <Link href={"/partnership"} className="cursor-pointer">
               <button className="px-6 py-2 mt-4 text-primary bg-white cursor-pointer rounded-md hover:bg-gray-200">
                 {data.buttonText}
               </button>
-            </Link>
+              </Link>
+            )}
           </div>
 
           {/* Image */}
