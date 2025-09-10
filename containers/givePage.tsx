@@ -1,3 +1,4 @@
+import GiveCard from "@/components/giveCard";
 import GiveForm from "@/components/giveForm";
 import HeroCard from "@/components/heroCard";
 import { giveDetails } from "@/data/giveDetails";
@@ -10,6 +11,7 @@ export default function GivePage() {
         bgImage={giveDetails?.bgImage}
         center={giveDetails?.center}
       />
+      <GiveCard data={giveDetails.giveCardData} />
       <GiveForm />
     </div>
   );
