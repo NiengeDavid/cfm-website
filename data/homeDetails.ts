@@ -74,16 +74,16 @@ export const homeDetails = {
     },
   ],
   events: [
-    {
-      title: "Faith Adventure 2025",
-      image: "/assets/events/FA2025Banner.jpeg",
-      link: "https://app.christfamilyministries.org",
-    },
-    {
-      title: "24 Anniversary Celebration",
-      image: "/assets/events/FA2025Ann.jpeg",
-      link: "",
-    },
+    // {
+    //   title: "Faith Adventure 2025",
+    //   image: "/assets/events/FA2025Banner.jpeg",
+    //   link: "https://app.christfamilyministries.org",
+    // },
+    // {
+    //   title: "24 Anniversary Celebration",
+    //   image: "/assets/events/FA2025Ann.jpeg",
+    //   link: "",
+    // },
     // { title: "Bethel", image: "/assets/events/bethel.png" },
     // { title: "Waiting", image: "/assets/events/waiting.png" },
   ],
