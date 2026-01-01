@@ -14,7 +14,7 @@ export default function SomaHero({ onCtaClick }: SomaHeroProps) {
       {/* Background Image / Gradient Overlay */}
       <div className="absolute inset-0 z-0">
         {/* Placeholder for actual background image */}
-        <div className="absolute inset-0 bg-[url('/assets/soma-bg-placeholder.jpg')] bg-cover bg-center opacity-60" />
+        <div className="absolute inset-0 bg-[url('/assets/flyer.png')] bg-cover bg-center opacity-20" />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-transparent to-black/80" />
 

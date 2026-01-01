@@ -59,12 +59,34 @@ export default function SomaRegistrationForm() {
         return;
       }
 
-      console.log(data);
+      // Step 2: Send confirmation email with registration code
+      try {
+        await fetch("/api/send", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            email: data.email,
+            firstName: data.firstName,
+            registrationCode: result.registrationCode,
+            qrDataUri: result.qrDataUri,
+          }),
+        });
+      } catch (emailError) {
+        console.error("Email send failed:", emailError);
+        // Don't fail the registration if email fails
+        toast.warning("Registration successful, but email failed to send", {
+          description: `Your code: ${result.registrationCode}. Please save it Now!`,
+          duration: 60000,
+        });
+        return;
+      }
 
+      // Step 3: Show success message
       toast.success("Registration successful!", {
-        description: "Your details have been recorded.",
+        description: `Check your email for confirmation. Code: ${result.registrationCode}`,
+        duration: 20000, // Show for 20 seconds
       });
-
+      
       reset();
     } catch (error) {
       console.error("Registration error:", error);
@@ -101,7 +123,10 @@ export default function SomaRegistrationForm() {
                 onValueChange={(value) => setValue("title", value)}
                 defaultValue={watch("title")}
               >
-                <SelectTrigger id="title" className="w-full py-6 border-gray-300">
+                <SelectTrigger
+                  id="title"
+                  className="w-full py-6 border-gray-300"
+                >
                   <SelectValue placeholder="Select title" />
                 </SelectTrigger>
                 <SelectContent>
