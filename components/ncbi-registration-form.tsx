@@ -83,15 +83,13 @@ export default function NcbiRegistrationForm() {
         >
           {/* Pay To Section - replicates the image text slightly */}
           <div className="text-lg md:text-base text-foreground mb-16">
-            <h4 className="font-bold text-foreground">PAY TO:</h4>
+            <h4 className="font-bold text-foreground">PAYMENT SHOULD BE MADE TO:</h4>
             <p>CFM-NEW CREATION BIBLE INSTITUTE</p>
             <p>1229706148</p>
             <p>Zenith Bank</p>
             <br />
             <p>
-              Kindly send proof of payment to{" "}
-              <span className="font-bold text-foreground">07057028955</span>{" "}
-              (WhatsApp)
+              Kindly send proof of payment to your center coordinator
             </p>
           </div>
 
