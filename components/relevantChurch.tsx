@@ -6,6 +6,7 @@ interface RelevantChurchProps {
     details: string;
     video: {
       url: string;
+      thumbnail?: string;
       autoplay?: boolean;
     };
   };

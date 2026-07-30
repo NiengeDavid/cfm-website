@@ -52,7 +52,8 @@ export const homeDetails = {
     title: "The Relevant Church",
     details: "Pastor Arome’s vision for the future",
     video: {
-      url: "https://www.youtube.com/embed/u6ZNZwBliiI?si=g_ZeDxSnvtH9mrcB",
+      url: "https://www.youtube.com/embed/u6ZNZwBliiI?si=Qqo-BwdjY83HYoxA",
+      thumbnail: "/assets/RelevantChurchThumbnail.png",
       autoplay: true,
     },
   },

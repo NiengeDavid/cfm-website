@@ -4,6 +4,7 @@ export const navDetails = {
     "About",
     "Centers",
     "Ministries",
+    "Days of Glory",
     "Give",
     "Partnership",
     "Leadership",
