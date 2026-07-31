@@ -31,7 +31,7 @@ export default function DaysOfGloryPage() {
     <div className="w-full bg-slate-50 min-h-screen pb-20">
       {/* Hero Header */}
       <HeroCard
-        title="21 Days of Glory"
+        title="22 Days of Glory"
         description="Kindle The Flame - FA'26"
         bgImage="/assets/confession.png"
         center={false}
