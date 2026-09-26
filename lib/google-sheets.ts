@@ -119,13 +119,14 @@ export async function appendNCBIToSheet(row: NCBIRegistrationRow) {
       row.serviceTeam,
       row.growthTrack,
       row.growthTrackYear,
+      row.status,
     ],
   ];
 
   try {
     await sheets.spreadsheets.values.append({
       spreadsheetId: sheetId,
-      range: "Sheet1!A:Q",
+      range: "Cohort2!A:R",
       valueInputOption: "USER_ENTERED",
       insertDataOption: "INSERT_ROWS",
       requestBody: {
